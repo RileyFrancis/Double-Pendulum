@@ -1,0 +1,20 @@
+[project]
+name = "double-pendulum"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Riley Francis", email = "rileyfrancis01@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "gymnasium>=1.3.0",
+    "mujoco>=3.14.0",
+]
+
+[project.scripts]
+double-pendulum = "double_pendulum:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
